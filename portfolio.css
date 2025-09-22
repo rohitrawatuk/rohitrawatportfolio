@@ -622,7 +622,7 @@ padding: 90px;
         flex: wrap;
     }
     .about .about-img{
-       margin-top: 120%;
+       margin-top: 100%;
        width: 130%;
        margin-left: 80px;
        position: absolute;
@@ -754,7 +754,8 @@ padding: 90px;
     }
     .about-text{
         width: 100%;
-        margin-top: 30px;
+        margin-top: 60px;
+        margin-right: 8%;
         
     }
     .about .about-text h2{
@@ -770,13 +771,13 @@ padding: 90px;
         padding-right: 3px;
     }
     .about .about-img{
-       margin-top: 60%;
-       margin-left: 30px;
+       margin-top: 70%;
+       margin-left: 100px;
        position: absolute;
     }
     .btn-box{
-        margin-top: 55%;
-        margin-left: 95px;
+        margin-top: 65%;
+        margin-left: 110px;
     }
     .social-links i{
         width: 2.5rem;
@@ -788,13 +789,13 @@ padding: 90px;
     }
 
     .main-container .image{
-        width: 130%;
+        width: 180%;
         
         margin-bottom: 0px;
-        padding-left: 80px;
+        padding-left: 140px;
     }
     .services .container .sub-title{
-        margin-top: -40%;
+        margin-top: -5%;
     }
       .services-list{
         margin-top: -10px;
@@ -802,12 +803,13 @@ padding: 90px;
         margin-left: 10px;
     }
     .py{
-        margin-top: 185%;
+        margin-top: 240%;
         padding:5%;
         width: 100%;
         }
 .techskills{
     width: 100%;
+    margin-left: 3px;
     display: flex;
     flex-direction: column;
     min-height: 25vh;
@@ -830,7 +832,7 @@ padding: 90px;
     margin-top: 10%;
 }
 .py-20{
-    margin-top: 180%;
+    margin-top: 220%;
 }
 .container-footer{
     width: 100%;
@@ -1020,4 +1022,3 @@ padding: 90px;
      
 
    
-

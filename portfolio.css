@@ -18,13 +18,11 @@ body{
     color: black;
     
 }
-
 nav{
     width: 100%;
     height: 10vh;
     position: sticky;
 }
-
 
 .nav-container{
     width: 100%;
@@ -33,6 +31,7 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
+
 
 .logo{
     color: black;
@@ -56,9 +55,11 @@ nav{
     font-size: 2rem;
     display: none;
 }
+
 .nav-container i{
     display: none;
-}
+   }
+
 .nav-container .links {
     display: flex;
     gap: 3rem;
@@ -194,6 +195,9 @@ section{
     font-weight: 600;
     font-size: clamp(1rem, 1rem + 5vw, 2rem);
 }
+.main-container .content p{
+    font-size: 20px;
+}
 
 .content .typewriter span{
     background: linear-gradient(90deg, #684f0c, #af064c);
@@ -209,8 +213,9 @@ section{
     content: "UI/UX, Web Desginer";
 }
 .content p{
-    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+    font-size: clamp(0.3rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
+    
 }
 
 .social-links i{
@@ -264,7 +269,7 @@ section{
     gap: 1.5rem;
 }
 .about-img img{
-width: 50%;
+width: 40%;
 border-radius: 50%;
 border-bottom: 4px solid rgba(0, 0, 0, 0.6);
 padding-bottom: 1%;
@@ -309,7 +314,7 @@ margin-left: 10%
        }
 .about-text p{
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.4;
     margin-left: 10%;
     margin-bottom: 4rem;
@@ -321,12 +326,13 @@ margin-left: 10%
     color: transparent;
 }
 #services{
-    color:black;
+    margin-top: 5%;
+     color:black;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
     }
-    .sub-title{
+      .sub-title{
         text-align: center;
         font-size: 40px;
         padding-bottom: 70px;
@@ -411,7 +417,8 @@ padding: 90px;
     padding: 200px;
 }
 .mt{
-    padding: 150px;
+    padding: 280px;
+    
 }
 .skill-bar {
     height: 8px;
@@ -436,6 +443,8 @@ padding: 90px;
 .tools{
     border: 1px solid black;
     padding-inline: 10px;
+    width: 130%;
+    margin-left: -110px;
     padding-bottom: 20px;
     padding-top: 20px;
     border-radius: 10px;
@@ -448,7 +457,9 @@ padding: 90px;
     color: transparent;
 }
 
-
+.bg-darker{
+    margin-top: -10%;
+}
 .card-hover {
     transition: all 0.3s ease;
 }
@@ -543,14 +554,14 @@ padding: 90px;
 }
 
 
-/* for 600px */
+/* media for mobiles phones android  */
 
-
-@media only screen and (max-width:600px) 
+@media (max-width:667px) 
     {
     body{
         overflow-y: visible;
-        overflow-x: none;
+        width: 100%;
+        overflow-x: hidden;
             }
 
     nav .logo{
@@ -636,6 +647,7 @@ padding: 90px;
     }
     .services .container .sub-title{
         margin-top: 30px;
+        
     }
       .services-list{
         margin-top: -10px;
@@ -643,8 +655,154 @@ padding: 90px;
         margin-left: 10px;
     }
     .py{
-        margin-top: 330%;
+        margin-top: 315%;
         padding:10%;
+        width: 100%;
+        }
+.techskills{
+    width: 110%;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    min-width: 40vh;
+      
+}
+.mt{
+    margin-top: 120%;
+    width: 100%;
+    padding:10%;
+}
+.tools{
+    width: 100%;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    min-width: 40vh; 
+}
+.bg-darker{
+    margin-top: 10%;
+}
+.py-20{
+    margin-top: 240%;
+}
+.container-footer{
+    width: 100%;
+    margin-top: 230%;
+    }
+.navfooter{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-footer{
+    height: 175px;
+    
+}
+
+   }
+/*media for Iphonnes*/
+
+
+   @media only screen and  (min-width: 390px) and (max-width: 896px){
+
+    body{
+        overflow-y: visible;
+       
+           
+            }
+
+    nav .logo{
+        position: absolute;
+        top: 16px;
+        left: 15px;
+        font-size: 1.5rem;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,.cancel{
+        display: block;
+    }
+    .nav-container i{
+        display: block;
+    }
+
+    .main-container .content {
+        width: 100%;
+        margin-top: 30px;
+         }
+    .content h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    .content .typewriter span{
+        width: 100%;
+        font-size: 30px;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .about-text{
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+    .about .about-text h2{
+        width: 100%;
+        font-size: 35px;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .about-text p{
+        font-size: 18px;
+        padding-right: 3px;
+    }
+    .about .about-img{
+       margin-top: 60%;
+       margin-left: 30px;
+       position: absolute;
+    }
+    .btn-box{
+        margin-top: 55%;
+        margin-left: 95px;
+    }
+    .social-links i{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .cancel{
+        color: white;
+    }
+
+    .main-container .image{
+        width: 130%;
+        
+        margin-bottom: 0px;
+        padding-left: 80px;
+    }
+    .services .container .sub-title{
+        margin-top: -40%;
+    }
+      .services-list{
+        margin-top: -10px;
+        width: 95%;
+        margin-left: 10px;
+    }
+    .py{
+        margin-top: 185%;
+        padding:5%;
         width: 100%;
         }
 .techskills{
@@ -656,9 +814,9 @@ padding: 90px;
       
 }
 .mt{
-    margin-top: 70%;
+    margin-top: 80%;
     width: 100%;
-    padding:10%;
+    padding:5%;
 }
 .tools{
     width: 100%;
@@ -671,17 +829,193 @@ padding: 90px;
     margin-top: 10%;
 }
 .py-20{
-    margin-top: 230%;
+    margin-top: 180%;
 }
 .container-footer{
     width: 100%;
-    margin-top: 230%;
+    margin-top: 180%;
     }
 .navfooter{
     display: flex;
     flex-wrap: wrap;
 }
 .container-footer{
-    height: 175px;   
+    height: 175px;
+    
 }
    }
+
+/*media for tablet */
+   @media only screen and  (min-width: 768px) and (max-width: 1024px){
+    body{
+        overflow-y: visible;
+        width: 100%;
+        overflow-x: hidden;
+            }
+            nav .logo{
+                position: absolute;
+                top: 16px;
+                left: 30px;
+                font-size: 2.5rem;
+            }   
+            
+            .main-container{
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+        
+            .nav-container .links{
+                display: none;
+            }
+        
+            .hamburg,.cancel{
+                display: block;
+            }
+            .nav-container i{
+                display: block;
+            }
+            .nav-container .hamburg{
+                top: 30px;
+                right: 40px;
+                font-size: 2rem;
+            }
+        
+            .main-container .content {
+                width: 100%;
+                padding-top: 200px;
+                padding-left: 70px;
+                 }
+            .content h1{
+                font-size: 30px;
+                width: 100%;
+            }
+            .content .typewriter span{
+                width: 100%;
+                font-size: 30px;
+            }
+            .content p{
+                font-size: 18px;
+            }
+            .about-text{
+                width: 100%;
+                margin-top: -100px;
+                
+            }
+            .about .about-text h2{
+                width: 100%;
+                font-size: 35px;
+            }
+            .about{
+                display: flex;
+                flex-direction: column;
+            }
+            .about .about-text p{
+                font-size: 18px;
+                padding-right: 3px;
+            }
+            .about .about-img{
+                width: 70%;
+               margin-top: 10%;
+               margin-left: 40px;
+               position: absolute;
+            }
+            .btn-box{
+                margin-top: 40%;
+                margin-left: 280px;
+            }
+            .social-links i{
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1.5rem;
+            }
+            .cancel{
+                color: white;
+            }
+        
+            .main-container .image{
+                width: 100%;
+                
+                margin-bottom: 550px;
+                position: absolute;
+                padding-left: 170px;
+            }
+            .services .container .sub-title{
+                margin-top: -45%;
+            }
+              .services-list{
+                margin-top: -10px;
+                width: 85%;
+                margin-left: 55px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .py{
+                margin-top: 15%;
+                padding:5%;
+                width: 100%;
+              
+                                }
+        .techskills{
+            width: 90%;
+            margin-left: 35px;
+            display: flex;
+            flex-direction: column;
+            min-height: 25vh;
+            min-width: 40vh;
+            border-radius: 10px;
+              
+        }
+        .py .grid{
+            display: flex;
+            flex-direction: column;
+        }
+        .mt{
+            margin-top: 20%;
+            width: 100%;
+            padding:5%;
+        }
+        .mt .tools{
+            margin-top: 10%;
+        }
+        .tools{
+            width: 100%;
+            margin-left: 4px;
+            display: flex;
+            flex-direction: column;
+            min-height: 25vh;
+            min-width: 40vh; 
+        }
+
+        .bg-darker{
+            margin-top: 5%;
+        }
+        .bg-darker .grid{
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            margin-left: 8%;
+        }
+        .py-20{
+            margin-top: 65%;
+                    }
+        .container-footer{
+            width: 100%;
+            margin-top: 65%;
+            }
+        .navfooter{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container-footer{
+            height: 175px;
+            
+        }
+
+   }
+
+
+
+     
+
+   

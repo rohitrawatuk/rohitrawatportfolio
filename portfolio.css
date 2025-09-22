@@ -605,7 +605,7 @@ padding: 90px;
     }
     .about-text{
         width: 100%;
-        margin-top: 80px;
+        margin-top: 180px;
         
     }
     .about .about-text h2{
@@ -622,8 +622,9 @@ padding: 90px;
         flex: wrap;
     }
     .about .about-img{
-       margin-top: 75%;
-       margin-left: 30px;
+       margin-top: 100%;
+       width: 130%;
+       margin-left: 80px;
        position: absolute;
     }
     .btn-box{
@@ -640,13 +641,13 @@ padding: 90px;
     }
 
     .main-container .image{
-        width: 130%;
+        width: 180%;
         
         margin-bottom: 0px;
-        padding-left: 80px;
+        padding-left: 140px;
     }
     .services .container .sub-title{
-        margin-top: 30px;
+        margin-top: 150px;
         
     }
       .services-list{
@@ -655,7 +656,7 @@ padding: 90px;
         margin-left: 10px;
     }
     .py{
-        margin-top: 315%;
+        margin-top: 350%;
         padding:10%;
         width: 100%;
         }
@@ -685,7 +686,7 @@ padding: 90px;
     margin-top: 10%;
 }
 .py-20{
-    margin-top: 240%;
+    margin-top: 290%;
 }
 .container-footer{
     width: 100%;
